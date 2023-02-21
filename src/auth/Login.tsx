@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Card } from "@mui/material";
 
-
 export default function Login() {
   const [username, setUsername] = useState<string>();
   const [password, setPassword] = useState<string>();
@@ -44,7 +43,10 @@ export default function Login() {
               />
             </Grid>
             <Grid className="grid place-items-center h-[60vh] " item xs={6}>
-              <img className="w-20 mt-5 " src="/assets/images/logofull.svg"></img>
+              <img
+                className="w-20 mt-5 "
+                src="/assets/images/logofull.svg"
+              ></img>
               <h2 className="text-2xl text-[#FF7A11] font-bold mt-10  ">
                 ADMIN LOGIN
               </h2>
@@ -69,13 +71,14 @@ export default function Login() {
                   placeholder="Password"
                   aria-label="Password"
                   name="Password"
-                />
+                />   <Link href="/dashboard">
                 <button
                   onClick={(e) => handleLogin(e)}
                   className="w-full p-2 mt-10 text-white bg-[#FF7A11]"
                 >
-                  Login
-                </button>
+              Login
+          
+                </button>   </Link>
               </form>
             </Grid>
           </Grid>

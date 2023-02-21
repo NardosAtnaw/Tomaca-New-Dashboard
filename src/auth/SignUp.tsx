@@ -5,3 +5,4 @@ export default function signup() {
     <div>signup</div>
   )
 }
+//example for footer
